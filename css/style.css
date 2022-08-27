@@ -14,6 +14,7 @@ body {
     font-size: 1rem;
     line-height: 1;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
 }
 
 a {
@@ -24,44 +25,3 @@ ul,ol {
     list-style: none;
 }
 
-.menu {
-    font-size: 0;
-    background-color: rgb(1, 72, 72);
-    outline: 2px solid red;
-    display: flex;
-    justify-content: space-around;
-    padding: 1%; /*задаю высоту меню*/
-}
-
-.menu__item {
-    outline: 2px solid blue;
-    display: inline-block;
-    font-size: 1.5rem;
-    position: relative;
-}
-
-.menu__item:hover .menu-dropdown {
-    display: block; /*для того чтоб при наведении мышки на меню показывалось подменю*/
-}
-
-.menu-dropdown {
-    outline: 2px solid black;
-    display: none;
-    position: absolute;
-    background-color: rgb(1, 72, 72);
-}
-
-.menu-dropdown__item {
-    color: whitesmoke;
-    line-height: 30px;
-    font-size: 1.2rem;
-}
-
-.menu-dropdown__item:hover {
-    color: rgb(12, 188, 141);
-    transition: 2s;
-}
-
-li>a {
-    color: whitesmoke; /*задаю цвет шрифта прямым потомкам элемента li, a*/
-}
