@@ -127,8 +127,14 @@ li>a {
 }
 
 img {
-    width: 100%; /*задала ширину картинкам*/
+    width: 90%; /*задала ширину картинкам*/
     border-radius: 17px; /*закруглила края картинок*/
+    transition: all 2s;
+}
+
+img:hover {
+    width: 100%;
+    transition: all 2s;
 }
 
 .info {
@@ -139,6 +145,7 @@ img {
     font-size: 1.2rem; /*задаю размер шрифта текста*/
     padding: 3%; /*задаю отступы для текста*/
     line-height: 33px; /*задаю высоту строк*/
+    text-indent: 25px; /*добавила абзац*/
 }
 
 .footer_info {
