@@ -23,30 +23,21 @@ ul,ol {
     list-style: none;
 }
 
-body {
-}
-
 .header {
-    outline: 2px solid black;
-    width: 100%;
+    outline: 2px solid fuchsia;
     position: fixed;
+    width: 100%;
 }
 
 .header_part {
     display: flex; /*по умолчанию блоки становяться в ряд*/
     justify-content: space-between; /*задаю расположение блокам*/
+    background-color: #fff; /*задала фон для 1й части хедера*/
 }
 
 [class*="link"] {
     color: rgb(1, 72, 72); /*задала цвет шрифту в верхней части хедера*/
     transition: all 2s; /*для того чтоб цвет менялся плавно*/
-}
-
-[class*="link"]:hover {
-    cursor: pointer; /*принаведении курсор становится пальчиком*/
-    text-decoration: underline; /*принаведении текст подчеркивается*/
-    color: blue; /*при наведении текст меняет цвет*/
-    transition: all 2s; /*для того чтоб цвет менялся плавно обратно*/
 }
 
 .header_logo {
@@ -59,7 +50,7 @@ body {
 .nav {
     outline: 2px solid palevioletred;
     width: 25%; /*задаю ширину блоку*/
-    padding: 1%;
+    padding: 1%; /*задаю внутренний отступ для nav*/
     font-size: 1.3rem; /*задаю размер шрифта*/
 }
 
@@ -98,11 +89,38 @@ body {
 }
 
 .main {
-    outline: 2px solid red;
-    
+    outline: 2px solid red; 
+    padding-top: 230px; /*чтоб main не пряталось в header при использовании его в position fixed*/
+    width: 70%; /*задала ширину основному контенту*/
+    margin: 0 auto; /*разместила контент посередине блока*/
+}
+
+[class$="title"] {
+    padding: 2%; /*задаю отступы для названий*/
+    color: rgb(1, 72, 72); /*задаю цвет для названий*/
+    text-align: center; /*задаю позиционирование*/
+}
+
+[class*="link"]:hover,
+[class$="title"]:hover {
+    cursor: pointer; /*принаведении курсор становится пальчиком*/
+    color: fuchsia; /*при наведении текст меняет цвет*/
+    transition: all 2s; /*для того чтоб цвет менялся плавно обратно*/
+}
+
+img {
+    width: 100%; /*задала ширину картинкам*/
+}
+
+.info {
+    padding: 2%; /*задаю отступы для текста*/
+}
+
+.info_text {
+    font-size: 1.2rem; /*задаю размер шрифта текста*/
+    font-family: Arial, Helvetica, sans-serif; /*выбираю шрифт для текста*/
 }
 
 .footer {
     outline: 2px solid forestgreen;
-
 }
