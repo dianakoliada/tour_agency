@@ -23,3 +23,53 @@ ul,ol {
     list-style: none;
 }
 
+body {
+}
+
+.header {
+    outline: 2px solid black;
+    
+}
+
+.header_part {
+    display: flex; /*по умолчанию блоки становяться в ряд*/
+    justify-content: space-between; /*задаю расположение блокам*/
+}
+
+[class*="link"] {
+    color: rgb(1, 72, 72); /*задала цвет шрифту в верхней части хедера*/
+}
+
+.header_logo {
+    outline: 2px solid blue;
+    width: 25%; /*задаю ширину блоку*/
+    padding: 1%; /*задаю внутренний отступ для лого*/
+    font-size: 2rem; /*задаю размер шрифта*/
+}
+
+.nav {
+    outline: 2px solid palevioletred;
+    width: 25%; /*задаю ширину блоку*/
+    padding: 1%;
+    font-size: 1.3rem; /*задаю размер шрифта*/
+}
+
+.nav_item {
+    display: inline; /*расположила айтемы в ряд*/
+    padding-right: 7%; /*задала отступ между айтемами*/
+}
+
+.menu {
+    outline: 2px solid gray;
+
+}
+
+.main {
+    outline: 2px solid red;
+    
+}
+
+.footer {
+    outline: 2px solid forestgreen;
+
+}
