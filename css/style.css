@@ -25,7 +25,6 @@ ul,ol {
 }
 
 .header {
-    outline: 2px solid fuchsia;
     position: fixed; /*зафиксировала*/
     width: 100%; /*задаю ширину*/
 }
@@ -45,14 +44,12 @@ ul,ol {
 }
 
 .header_logo {
-    outline: 2px solid blue;
     width: 30%; /*задаю ширину блоку*/
     padding: 1%; /*задаю внутренний отступ для лого*/
     font-size: 1.5rem; /*задаю размер шрифта*/
 }
 
 .nav {
-    outline: 2px solid palevioletred;
     width: 25%; /*задаю ширину блоку*/
     padding: 1%; /*задаю внутренний отступ для nav*/
     font-size: 1.3rem; /*задаю размер шрифта*/
@@ -65,12 +62,11 @@ ul,ol {
 
 .menu,
 .footer {
-    outline: 2px solid gray;
     background-color: rgb(1, 72, 72); /*задала фон для 2й части хедера*/
 }
 
 .menu_secondary {
-    padding: 2%;
+    padding: 2%; /*задаю высоту блоку*/
     background-color: rgb(1, 72, 72); /*задала фон для 2й части хедера*/
 }
 
@@ -99,7 +95,6 @@ ul,ol {
 }
 
 .main {
-    outline: 2px solid red; 
     padding-top: 270px; /*чтоб main не пряталось в header при использовании его в position fixed*/
     width: 70%; /*задала ширину основному контенту*/
     margin: 0 auto; /*разместила контент посередине блока*/
@@ -112,9 +107,9 @@ ul,ol {
 
 div>h2,
 li>a {
-    font-family: 'Chakra Petch', sans-serif; /*задаю стиль шрифта для h2*/
-    font-family: 'Dancing Script', cursive; /*задаю стиль шрифта для h2*/
-    font-size: 1.8rem;
+    font-family: 'Chakra Petch', sans-serif; /*задаю стиль шрифта*/
+    font-family: 'Dancing Script', cursive; /*задаю стиль шрифта*/
+    font-size: 1.8rem; /*задаю размер шрифта*/
 }
 
 [class$="title"] {
