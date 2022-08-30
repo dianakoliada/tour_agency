@@ -13,6 +13,7 @@ html {
 body {
     font-size: 1rem;
     line-height: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -59,8 +60,14 @@ ul,ol {
     padding-right: 7%; /*задала отступ между айтемами*/
 }
 
-.menu {
+.menu,
+.footer {
     outline: 2px solid gray;
+    background-color: rgb(1, 72, 72); /*задала фон для 2й части хедера*/
+}
+
+.menu_secondary {
+    padding: 2%;
     background-color: rgb(1, 72, 72); /*задала фон для 2й части хедера*/
 }
 
@@ -95,6 +102,17 @@ ul,ol {
     margin: 0 auto; /*разместила контент посередине блока*/
 }
 
+.main_secondary {
+    background-image: url(../imgs/bgi_gr_brit.jpg); /*задала фон для второй страницы*/
+    background-size: cover;
+}
+
+div>h2,
+li>a {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
 [class$="title"] {
     padding: 2%; /*задаю отступы для названий*/
     color: rgb(1, 72, 72); /*задаю цвет для названий*/
@@ -110,17 +128,27 @@ ul,ol {
 
 img {
     width: 100%; /*задала ширину картинкам*/
+    border-radius: 17px; /*закруглила края картинок*/
 }
 
 .info {
-    padding: 2%; /*задаю отступы для текста*/
+    padding: 1% 1% 0; /*задаю отступы для menu about us*/
 }
 
 .info_text {
     font-size: 1.2rem; /*задаю размер шрифта текста*/
-    font-family: Arial, Helvetica, sans-serif; /*выбираю шрифт для текста*/
+    padding: 3%; /*задаю отступы для текста*/
+    line-height: 33px; /*задаю высоту строк*/
 }
 
-.footer {
-    outline: 2px solid forestgreen;
+.footer_info {
+    color: white; /*задала цвет шрифтa футера*/
+    padding: 1%; /*задаю отступы для текста*/
+    font-size: 1.2rem; /*задаю размер шрифта текста*/
+}
+
+.footer_item {
+    display: block; /*делаю строчный элемент блочным*/
+    text-align: center; /*размещаю текст посредине*/
+    font-size: 1.2rem; /*задаю размер шрифта текста*/
 }
