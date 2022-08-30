@@ -28,7 +28,8 @@ body {
 
 .header {
     outline: 2px solid black;
-    
+    width: 100%;
+    position: fixed;
 }
 
 .header_part {
@@ -38,6 +39,14 @@ body {
 
 [class*="link"] {
     color: rgb(1, 72, 72); /*задала цвет шрифту в верхней части хедера*/
+    transition: all 2s; /*для того чтоб цвет менялся плавно*/
+}
+
+[class*="link"]:hover {
+    cursor: pointer; /*принаведении курсор становится пальчиком*/
+    text-decoration: underline; /*принаведении текст подчеркивается*/
+    color: blue; /*при наведении текст меняет цвет*/
+    transition: all 2s; /*для того чтоб цвет менялся плавно обратно*/
 }
 
 .header_logo {
@@ -61,7 +70,31 @@ body {
 
 .menu {
     outline: 2px solid gray;
+    background-color: rgb(1, 72, 72); /*задала фон для 2й части хедера*/
+}
 
+.menu_form {
+    display: flex; /*по умолчанию блоки становяться в ряд*/
+    justify-content: space-around; /*задаю расположение блокам*/
+    padding: 2%; /*задаю высоту блоку*/
+    color: white; /*задала цвет шрифту во второй части хедера*/
+}
+
+.form_text {
+    border: 5px solid white; /*задала границы форме (инпут)*/
+    border-radius: 8px; /*саму форму сделала плавной*/
+}
+
+.form_text--btn {
+    border: 5px solid white; /*задала границы форме (инпут)*/
+    border-radius: 8px; /*саму форму сделала плавной*/
+    padding: 30%; /*задала внутренние отступы для увеличения инпута*/
+    transition: all 2s; /*при наведении мышки плавно меняятся цвет обратно*/
+}
+
+.form_text--btn:hover {
+    background-color: grey; /*при наведении мышки меняятся цвет*/
+    transition: all 2s; /*для плавности*/
 }
 
 .main {

@@ -25,7 +25,7 @@
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="" class="nav_link">
+                        <a href="#special" class="nav_link">
                             Contacts
                         </a>
                     </li>
@@ -37,11 +37,12 @@
                         <h2>
                             Country
                         </h2>
-                        <select name="select1">
-                            <option value="value1">
+                        <br>
+                        <select name="select1" class="form_text">
+                            <option value="Great Britain">
                                 Great Britain
                             </option>
-                            <option value="value2">
+                            <option value="Austria">
                                 Austria
                             </option>
                         </select>
@@ -50,20 +51,22 @@
                         <h2>
                             Sleeps
                         </h2>
+                        <br>
                         <label>
-                            <input type="number" name="quantity">
+                            <input type="number" name="quantity" class="form_text"> 
                         </label>
                     </div>
                     <div class="menu_item">
                         <h2>
                             Arrival date
                         </h2>
+                        <br>
                         <label>
-                            <input type="date" name="date" min="2022-08-28" max="2022-12-31">
+                            <input type="date" name="date" min="2022-08-28" max="2022-12-31" class="form_text">
                         </label>
                     </div>
                     <div class="menu_item">
-                        <input type="submit" value="Book now">
+                        <input type="submit" value="Book now" class="form_text--btn">
                     </div>
                 </form>
             </div>
@@ -94,7 +97,7 @@
             </div>
         </main>
         <footer class="footer">
-            <div class="footer_info">
+            <div class="footer_info" id="special">
                 <p>
                     Ukraine, Slava Ukraini St. 62/7
                 </p>
