@@ -84,14 +84,16 @@ ul,ol {
 
 .form_text--btn {
     border: 5px solid white; /*задала границы форме (инпут)*/
-    border-radius: 8px; /*саму форму сделала плавной*/
+    border-radius: 10px 30px; /*саму форму сделала плавной*/
     padding: 30%; /*задала внутренние отступы для увеличения инпута*/
     transition: all 2s; /*при наведении мышки плавно меняятся цвет обратно*/
 }
 
 .form_text--btn:hover {
-    background-color: grey; /*при наведении мышки меняятся цвет*/
+    background-color: rgb(1, 72, 72); /*при наведении мышки меняятся цвет фона*/
+    color: white; /*при наведении мышки меняятся цвет шрифта*/
     transition: all 2s; /*для плавности*/
+    border: 8px solid white; /*задала границы форме (инпут)*/
 }
 
 .main {
